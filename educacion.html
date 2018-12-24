@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width; user-scalable=no">
 	<meta name="author" content="Jesica Guido">
-		<meta name="keywords" content="curriculum vitae Jesica Guido, educacion Jesica Guido">
+	<meta name="keywords" content="curriculum vitae Jesica Guido, educacion Jesica Guido">
 	<meta name="description" content="Trayecto educativo de Jesica Guido">
 	<title>Educación</title>
 </head>
@@ -15,8 +15,9 @@
 		</svg>
 		<section>
 			<h1>Curriculum Vitae</h1>
-			<h2>Nombre: Jesica</h2>
-			<h2>Apellido: Guido</h2>
+			<h2>Datos personales</h2>
+			<h3>Nombre: Jesica</h3>
+			<h3>Apellido: Guido</h3>
 			<h3>Fecha de nacimiento:21-12-1989</h3>
 			<h3>Lugar de nacimiento:Buenos Aires, Argentina</h3>
 			<nav>
@@ -31,57 +32,63 @@
 	<main>
 		<h2>Educación</h2>
 		<section>
-			<table border="1" cellpadding="10" cellspacing="0">
-				<tr>
-					<th>Año</th>
-					<th>Institución</th>
-					<th>Lugar</th>
-					<th>¿Culminó?</th>
-				</tr>
-				<tr>
-					<td>2018</td>
-					<td>Next U</td>
-					<td>Buenos Aires</td>
-					<td>Si</td>
-				</tr>
-				<tr>
-					<td>2018</td>
-					<td>ISTEA</td>
-					<td>Buenos Aires</td>
-					<td>En curso</td>
-				</tr>
+			<article>
+				<table border="1" cellpadding="10" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Año</th>
+						<th>Institución</th>
+						<th>Lugar</th>
+						<th>¿Culminó?</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2018</td>
+						<td>Next U</td>
+						<td>Buenos Aires</td>
+						<td>Si</td>
+					</tr>
+					<tr>
+						<td>2018</td>
+						<td>ISTEA</td>
+						<td>Buenos Aires</td>
+						<td>En curso</td>
+					</tr>
+				</tbody>
 			</table>
-		</section>
-		<section>
-			<h3>Agregar estudios</h3>
-			<form action="">
+			</article>
+			<article>
+				<h3>Agregar estudios</h3>
+			<form action="" autcomplete="on" name="AgregarEstudios">
 				<p>
-					<label for="anio">Año:</label>
+					<label for="anio">Año:</label><br>
 					<select name="anio" id="anio">
-					<option value="2018">2018</option>
-					<option value="2017">2017</option>
-					<option value="2016">2016</option>
-					<option value="2015">2015</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
 					</select>
 				</p>
 				<p>
-					<label for="institucion" required>Institución:</label>
-					<input type="text" name="institucion" id="institucion">
+					<label for="institucion" required>Institución:</label><br>
+					<input type="text" name="institucion" id="institucion" placeholder="Ej: UBA">
 				</p>
 				<p>
-					<label for="lugar">Lugar:</label>
-					<input type="text" name="lugar" id="lugar">
+					<label for="lugar">Lugar:</label><br>
+					<textarea name="lugar" id="lugar" cols="30" rows="10" placeholder="Ej:La Plata"></textarea>
 				</p>
 				<input type="submit" value="Enviar">
 			</form>
+			</article>
 		</section>
 	</main>
-		<footer>
-		<p>Contacto</p>
+	<footer>
+		<h2>Contacto</h2>
 		<a href="mailto:guido.jdg@gmail.com?subject=contacto"></a>
 		<p>Telefono:1521847546</p>
 		<a href="https://www.linkedin.com/in/jesicadeniseguido/" target="_black">LinkeIn</a>
 	</footer>
-	
+
 </body>
 </html>
